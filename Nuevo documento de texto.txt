@@ -1,7 +1,7 @@
 cd mkdir pwd ls git add, commit, branch, remote, push
 git pull origin main --rebase
 git log
-git config --list --local
+git config --list --local       git config --list --show-origin         git config --list --global     git config --list     git config user.name
 git clone
 git pull
 
@@ -10,4 +10,41 @@ git tag       git push origin --tags   version
 git push origin v1.0
 git tag     git tag v2.1
 
+git remote -v             detalles de los repositorios remotos
+git branch -v
+
+
+git stash pop             cajon guardar lo que se ha echo
+
+
 -m -a     son flags o parametros 
+
+-a (Annotated): Crea un tag con autor, fecha y mensaje propio.
+=========================================
+      GUÍA RÁPIDA DE FLAGS DE GIT
+=========================================
+
+1. CONFIGURACIÓN (git config)
+-----------------------------------------
+--local   -> Solo para esta carpeta (Ideal en PC ajena).
+--global  -> Para todo el sistema.
+--list    -> Muestra qué datos están guardados.
+
+2. COMMITS Y TAGS (git commit / git tag)
+-----------------------------------------
+-a        -> (Annotated) Crea un objeto completo con autor/fecha.
+-m        -> (Message) Escribe el mensaje ahí mismo sin abrir editores.
+-am       -> (Add+Message) Añade cambios y hace commit a la vez.
+--amend   -> Corrige el último commit (si olvidaste un archivo o letra).
+
+3. RAMAS Y REMOTOS (git branch / git push)
+-----------------------------------------
+-b        -> Crea una rama nueva y te cambia a ella.
+-d        -> Borra una rama o tag.
+-u        -> (Upstream) Vincula tu rama local con la de la nube.
+-f        -> (Force) Sobrescribe lo que haya en la nube (Peligroso).
+--tags    -> Sube todas tus etiquetas de un solo golpe.
+
+4. AYUDA RÁPIDA
+-----------------------------------------
+--help    -> Abre el manual completo de cualquier comando.
