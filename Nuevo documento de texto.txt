@@ -1,3 +1,4 @@
 cd mkdir pwd ls git add, commit, branch, remote, push
 git pull origin main --rebase
 git log
+git config --list --local
