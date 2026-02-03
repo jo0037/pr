@@ -9,3 +9,5 @@ git tag -a v1.0 -m "Version 1.0 release"
 git tag       git push origin --tags   version
 git push origin v1.0
 git tag     git tag v2.1
+
+-m -a     son flags o parametros 
