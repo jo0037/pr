@@ -16,6 +16,10 @@ git branch -v
 
 git stash pop             cajon guardar lo que se ha echo
 
+git log           git log --oneline
+
+git diff --staged
+
 
 -m -a     son flags o parametros 
 
